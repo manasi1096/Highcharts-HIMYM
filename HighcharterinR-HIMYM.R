@@ -3,9 +3,9 @@ library(plyr)
 library(dplyr)
 library(highcharter)
 
-fans_react = fread("..himymfanreact.csv")
-Number_of_drinks = fread("...himymdrinks.csv")
-HighestRated = fread("...HRated.csv")
+fans_react = fread("..fansReact-HIMYM.csv")
+Number_of_drinks = fread("...Numberofdrinks-HIMYM.csv")
+HighestRated = fread("...HighestRated-HIMYM.csv")
 
 
 #Grouped column chart
