@@ -3,9 +3,9 @@ library(plyr)
 library(dplyr)
 library(highcharter)
 
-fans_react = fread("C:/Users/mama7051/Desktop/hcharts-himym/himymfanreact.csv")
-Number_of_drinks = fread("C:/Users/mama7051/Desktop/hcharts-himym/himymdrinks.csv")
-HighestRated = fread("C:/Users/mama7051/Desktop/hcharts-himym/HRated.csv")
+fans_react = fread("..himymfanreact.csv")
+Number_of_drinks = fread("...himymdrinks.csv")
+HighestRated = fread("...HRated.csv")
 
 
 #Grouped column chart
@@ -31,6 +31,8 @@ Number_of_drinks %>%
 
 
 #Pie chart 
+
+favorite_bars$bars = paste(favorite_bars$bar,favorite_bars$percent,"%");
 
 favorite_bars %>% 
   hchart('pie', hcaes(bars, percent)) %>% 
